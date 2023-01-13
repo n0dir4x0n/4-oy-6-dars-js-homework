@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: inherit;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: skyblue;
+  color: black;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.btn {
+  font-size: 2rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: transparent;
+  padding: 20px;
+  transition: 0.3s ease-in-out all;
+}
+.btn:hover {
+  color: #333;
+  background-color: grey;
+}
+
+.text-red {
+  color: blue;
+}
+
+.text-lime {
+  color: violet;
+}
+
+.text-sky {
+  color: aqua;
+}
+
+#todo-form {
+  display: flex;
+  margin-block: 2rem;
+}
+#todo-form input {
+  font-size: 2rem;
+  flex: 1;
+  border: 3px solid black;
+  border-radius: 10px 0 0 10px;
+  background: transparent;
+  padding: 20px;
+}
+#todo-form button {
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul#todos li.todo {
+  margin-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+ul#todos li.todo input[type=checkbox]:checked + span.todo-label {
+  text-decoration: line-through;
+}
+ul#todos li.todo .edit-todo-input {
+  background: transparent;
+  outline: none;
+  font-size: inherit;
+  border: none;
+}
+ul#todos li.todo .actions {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
