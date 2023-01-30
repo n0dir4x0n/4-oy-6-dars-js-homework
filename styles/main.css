@@ -14,8 +14,8 @@ button {
 
 body {
   font-family: sans-serif;
-  background-color: skyblue;
-  color: black;
+  background-color: white;
+  color: yellowgreen;
   text-transform: capitalize;
 }
 
@@ -103,3 +103,10 @@ ul#todos li.todo .actions {
   justify-content: end;
   gap: 1rem;
 }
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+
